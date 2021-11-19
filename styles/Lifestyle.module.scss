@@ -1,0 +1,199 @@
+.lifestyles__list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+
+    .lifestyle__item_one {
+        position: absolute;
+        top: -35px;
+        left: 20%;
+        background-image: url('https://diprella.com/assets/img/course-list-figure8.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: rotate(-370deg);
+        height: 70px;
+        width: 70px;
+    }
+
+    .lifestyle__item_two {
+        position: absolute;
+        bottom: -20px;
+        left: 10%;
+        background-image: url('https://diprella.com/assets/img/course-list-figure3.svg');
+        background-repeat: no-repeat;
+        transform: rotate(65deg);
+        width: 120px;
+        height: 120px;
+    }
+
+    .lifestyle__item_three {
+        position: absolute;
+        top:85px;
+        right:-90px;
+        width: 150px;   
+        height: 150px;
+        border-radius: 9999px;
+        background-color: rgba(255,255,255,.08);
+    }
+
+    .lifestyle__item_four {
+        position: absolute;
+        bottom: -1px;
+        right: 30%;
+        background-image: url('https://diprella.com/assets/img/course-list-figure2.svg');
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+        transform: rotate(-50deg);
+    }
+
+    .lifestyle__item_five {
+        position: absolute;
+        top:100px;
+        left: 30%;
+        width: 50px;
+        height: 50px;
+        background-image: url('https://diprella.com/assets/img/course-list-figure4.svg');
+        transform: rotate(-85deg);
+        background-repeat: no-repeat;
+    }
+
+    .lifestyle__background_item1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 31%;
+        height: 100%;
+        background-color: #38ba8a;
+        z-index: -1;
+    }
+
+    .lifestyle__background_item2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        top: 0;
+        left: 30%;
+        width: 40%;
+        height: 100%;
+        background: -webkit-gradient(linear,right top,left top,from(#3ba5b4),to(#38ba8a));
+        background: linear-gradient(to left,#3ba5b4 0,#38ba8a 100%);
+        z-index: -1;
+        h2 {
+            font-weight: 600;
+            color:white;
+            font-size: 55px;
+        }
+
+        p {
+            margin:0px;
+            text-align: center;
+            line-height: 32px;
+            font-size: 17px;
+            color:white
+        }
+
+    }
+
+    .lifestyle__background_item3{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 31%;
+        height: 100%;
+        background-color: #3ba5b4;
+        z-index: -1;
+    }
+}
+
+.lifestyle__content {
+    max-width: 1200px;
+    margin: 60px auto;
+    min-height:200px;
+    background-color: #f4f8f7;
+
+
+    h3 { 
+        display: flex;
+        align-items: center;
+        font-weight: 550;
+        font-size: 30px;
+        letter-spacing: 5px;
+        
+    }
+
+    .lifestyle__result_list {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        box-shadow: 3px 6px 10px rgba(0,0,0,0.1);
+        background-color: white;
+        .lifestyle__result_box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            .lifestyle__result_box_logo {
+                img {
+                    width: 120px;
+                    height: 120px;
+                    cursor: pointer;
+                    object-fit: cover;
+                }
+            }
+
+            .lifestyle__result_box_name{
+                margin:0px 30px;
+                h4 {
+                    color:rgb(17,17, 17);
+                    font-weight: 550;
+                }
+
+                p {
+                    color: #555A59;
+                    font-size: 17px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .lifestyle__result_company {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .lifestyle__result_company_logo {
+                img {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 9999px;
+                    cursor: pointer;
+                    object-fit: cover;
+                }
+            }
+            
+            .lifestyle__result_company_name { 
+                margin:0px 30px;
+                h4 {
+                    color:rgb(17,17, 17);
+                    font-weight: 550;
+                }
+
+                p {
+                    color: #555A59;
+                    font-size: 17px;
+                    font-weight: 400;
+                }
+
+            }
+        }
+    }
+
+   
+
+    
+}

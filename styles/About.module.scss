@@ -1,0 +1,176 @@
+.about {
+    max-width: 100%;
+
+    .about__banner {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+
+        .about__banner_background1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 31%;
+            height: 100%;
+            background-color: #38ba8a;
+            z-index: -1;
+        }
+
+        .about__banner_background2{
+            position: absolute;
+            top: 0;
+            left: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 40%;
+            height: 100%;
+            background: -webkit-gradient(linear,right top,left top,from(#3ba5b4),to(#38ba8a));
+            background: linear-gradient(to left,#3ba5b4 0,#38ba8a 100%);
+            z-index: -1;
+
+            h2 {
+                font-weight: 600;
+                color:white;
+                font-size: 55px;
+            }
+
+            p{
+                margin:0px;
+                text-align: center;
+                line-height: 32px;
+                font-size: 17px;
+                color:white
+            }
+        }
+
+        .about__banner_background3{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 31%;
+            height: 100%;
+            background-color: #3ba5b4;
+            z-index: -1;
+        }
+    }
+
+    .about__list {
+        display: flex;
+        justify-content: stretch;
+        align-items: center;
+        flex-direction: column;
+        max-width: 1200px;
+        margin: 60px auto;
+
+        .about__list_item { 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin:10px 0px;
+            padding: 20px;
+            border: 1px solid #e7e7e7;
+            outline: none;
+            width: 100%;
+
+
+            .about__list_item_box { 
+                display: flex;
+                align-items: center;
+                max-width: 450px;
+
+                .about__list_item_box_logo {
+                    img { 
+                        width: auto;
+                        height: 130px;
+                        cursor: pointer;
+                        object-fit: cover;
+                    }
+                }
+
+                .about__list_item_box_content {
+                    margin: 0px 20px;
+
+                    .about__list_item_box_content_title { 
+                        color: #38ba8a;
+                        font-weight: 500;
+                        font-size: 14px;
+                    }
+
+                    h2 { 
+                        font-weight: 550;
+                        letter-spacing: 1px;
+                        color:rgb(17, 17, 17);
+                        font-size: 18px;
+                    }
+
+                    p {
+                        margin: 0px;
+                        color: #555A59
+                    }
+                }
+            }
+
+            .about__list_item_company { 
+                position: relative;
+                display: flex;
+                max-width: 300px; 
+
+                &::after {
+                    position: absolute;
+                    content: ' ';
+                    right: -100px;
+                    height: 100%;
+                    width: 2px;
+                    background-color: #e7e7e7;
+                }
+               
+                &_logo {
+                    img {
+                        width: 90px;
+                        height: 90px;
+                        object-fit: cover;
+                        cursor: pointer;
+                        border-radius: 9999px;
+                    }
+                }
+
+                .about__list_item_company_content {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin: 0px 20px;
+
+                    h3 {
+                        color:#202121;
+                        font-size: 17px;
+                        font-weight: 400;
+                    }
+
+                    h2 {
+                        color: #555A59;
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .about__list_item_course {
+                max-width: 200px;
+                min-width: 120px;
+                h4 {
+                    width: 100%;
+                    text-align: center;
+                    color: #38ba8a;
+                    font-weight: 500;
+                    font-size: 17px;
+                }
+
+
+            }
+        }
+    }
+
+}

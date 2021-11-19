@@ -1,0 +1,150 @@
+.header {
+   position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    padding:0px 20px;
+    max-width: 1400px;
+  
+    &__content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+  
+      .header__logo {
+        img {
+          width: auto;
+          height: 50px;
+          cursor: pointer;
+
+          @media (min-width: 375px) and (max-width: 500px) {
+            height: 43px;
+           
+          }
+        }
+      }
+
+      .header__hambuger_icon { 
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        display: none;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+
+        @media (min-width: 375px) and (max-width: 500px) {
+          display:block;      
+        }
+      }
+  
+      .header__nav {
+        display: flex;
+        align-items: center;
+        margin: 0px 0px 0px 40px;
+        padding: 0px;
+        list-style: none;
+
+       
+        @media (min-width: 375px) and (max-width: 500px) {
+          display:none
+        }
+  
+        li {
+          position: relative;
+          margin:0px 15px;
+          font-size: 17px;
+          color:rgb(17,17,17);
+          font-weight: 500;
+          cursor: pointer;
+
+          &::after {
+            position: absolute;
+            left: 0%;
+            content: '';
+            display: block;
+            margin: auto;
+            width: 0%;
+            height: 2px;
+            background-color: #3fa08e;
+            transition: all 0.5s;
+          }
+
+          &:hover::after{
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .header__login {
+      button {
+        height: 40px;
+        border-radius: 10px;
+        width: 100%;
+        background-color: rgb(63,160,142) !important;
+        color:white;
+        font-weight: 550;
+        outline: none;
+        border: 1px solid rgb(63,160,142) !important;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        animation: all ease-in-out 600ms;
+        cursor: pointer;
+      }
+    }
+  }
+
+
+  .res__menu {
+    .res__menu_logo { 
+      display: flex;
+      justify-content: center;
+      img {
+        width: auto;
+        height: 40px;
+        cursor: pointer;
+      }
+    }
+    
+    .res__list {
+      padding: 0px;
+      list-style: none;
+      height: 300px;
+      width: 100%;
+
+      li { 
+        position: relative;
+        margin:30px 15px;
+        text-align: center;
+        font-size: 17px;
+        color:rgb(17,17,17);
+        font-weight: 500;
+        cursor: pointer;
+
+        &::after {
+          position: absolute;
+          content: '';
+          left:0%;
+          bottom: 0px;
+          display: block;
+          margin: 0px auto;
+          height: 2px;
+          background-color: #3fa08e;
+          width: 0%;
+          transition: all 0.5s;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+
+    }
+
+
+    
+  }

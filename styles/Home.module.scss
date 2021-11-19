@@ -1,0 +1,102 @@
+
+
+.home {
+  max-width: 1400px;
+  margin: 60px auto;
+
+  &__button {
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    border: 1px solid #3fa08e;
+    border-radius: 9999px;
+    width: 50px;
+    height: 50px;
+    background-color: #3fa08e;
+    color:white;
+    font-weight: 550;
+    cursor: pointer;
+
+    @media (min-width: 375px) and (max-width: 500px) {
+      right: 5px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+  
+    .home__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 20px 0px 20px 28px;
+      padding: 15px;
+      border: 1px solid #e7e7e7;
+      border-radius: 10px;
+      box-shadow: 3px 6px 10px rgba(0,0,0,0.2);
+ 
+
+      @media (min-width: 375px) and (max-width: 500px) {
+        min-width: 150px;
+        margin: 10px 2px;
+        padding: 8px;
+        // flex-grow: 1;
+      }
+
+      .home__logo {
+        img { 
+          width: auto;
+          height: 300px;
+          cursor: pointer;
+          object-fit: cover;
+
+          @media (min-width: 375px) and (max-width: 500px) {
+              height: 150px;
+              width: auto;
+              object-fit: cover;
+          }
+        }
+      }
+
+      .home__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 14px;
+        width: 100%;
+        flex-grow: 1;
+
+        @media (min-width: 375px) and (max-width: 500px) {
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          flex-grow: 1;
+        }
+
+        .home__name {
+          margin:0px;
+          flex-grow: 1;
+        
+        }
+
+        .home__price { 
+          margin: 0px;
+          padding: 5px;
+          background-color: #3fa08e;
+          color: white;
+          text-align: center;
+          font-weight: 500;
+          // color: #555A59;
+          font-size: 16px;
+          cursor: pointer;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}
